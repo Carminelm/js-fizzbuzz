@@ -1,22 +1,26 @@
-//Creaiamo container per box numeri 
-const container = document.querySelector(".container")
+
 
 //Creare ciclo numeri 
 for (let i = 1; i <= 100; i++){
     console.log(i);
 
-    
-    //Creiamo box per numeri 
-    const element = `<div class="box"> $(i) </div>`;
-    console.log(element);
 
 
-    //Stampiamo in html 
-    container.innerHTML+= element;
-
+    //Creiamo un IF per i casi dei numeri 
 
   
+    if(i % 3 == 0 && i % 5 == 0) { 
 
+        console.log('fizzbuzz');
 
+    } else if (i % 5 == 0) {
+     
+        console.log('buzz');
+    } else if(i % 3 == 0){
+     
+        console.log('fizz');
+    } else {
+     
+        console.log(i);
+    }
 }
-
